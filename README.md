@@ -9,7 +9,7 @@
 ## Introdução
 **Nome do Projeto: SportBuddy**
 
-O nosso projeto será sobre uma aplicação de matchmaking pensada para o desenvolvimento e crescimento de uma comunidade que procura realizar desporto ou atividade física em grupo. Desejamos criar um ambiente onde todos possam ter acesso de forma facil e de acordo com os filtros de localização e de desporto escolhido, será realizado um matchmaking com outros atletas com interesses iguais aos seus onde os mesmos podem se tornar amizades ativas e companheiros de treino num futuro próximo. Através do poder que o desporto tem de unir as pessoas, nós visamos elevar o conceito de teamwork e matchmaking a outro nível criando assim uma aplicação capaz de unir pessoas para fazer o que mais amam.
+O nosso projeto será sobre uma aplicação de matchmaking pensada para o desenvolvimento e crescimento de uma comunidade que procura realizar desporto ou atividade física em grupo. Desejamos criar um ambiente onde todos possam ter acesso de forma facil e de acordo com os filtros de localização e de desporto escolhido, será realizado um matchmaking com outros atletas com interesses iguais aos seus onde os mesmos podem tornar se amizades ativas e companheiros de treino num futuro próximo. Através do poder que o desporto tem de unir as pessoas, nós visamos elevar o conceito de teamwork e matchmaking a outro nível criando assim uma aplicação capaz de unir pessoas para fazer o que mais amam.
 
 ## Objetivos
 
@@ -20,6 +20,13 @@ Com a nossa aplicação procuramos criar algo inusitado e completamente revoluci
 Contamos com tecnologias de ponta e uma aplicação bem estruturada e muito intuitiva, fácil de usar de modo a criar uma comunidade incrível onde o desporto que tanto amamos é mais um laço para amizades futuras.
 
 Para tal, e como nos foi proposto iremos criar esta aplicação com a utilização do Android Studio com auxilio da linguagem Java, para a base de dados vamos utilizar o MySQL onde serão guardadas todas as informações de Registo do utilizador, e todos os movimentos na aplicação como “Encontros bem sucedidos”, “Encontros Cancelados” entre outros. 
+
+**De modo a pensar nas funcionalidades os nossos objetivos são:**
+
+- As estatísticas dos treinos e os desempenhos dos atletas
+- Uma área exclusiva para membros, onde os mesmos conseguem criar torneios
+- Janela com as estatísticas pessoais dos atletas
+- Uma área onde é mostrada o mapa com as quadras/ginásios mais próximos
 
 **Requisitos não Funcionais:**
 - Possuir o Java instalado
@@ -34,7 +41,7 @@ A unidade curricular de Matemática Discreta estará presente na janela onde mos
 
 **Base de Dados**
 
-A unidade curricular de Base de Dados vai ter um papel fundamental na criação da base de dados que irá conter as informações dos esportes, estatisticas dos jogadores, informações pessoais entre outros.
+A unidade curricular de Base de Dados vai ter um papel fundamental na criação da base de dados que irá conter as informações dos desportos, estatisticas dos jogadores, informações pessoais entre outros.
 
 **Programação Orientada a Objetos**
 
@@ -56,6 +63,5 @@ Ao decorrer do semestre e das apresentações, utilizaremos as estratégias ensi
 \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![alt text](https://github.com/Kaiobr13/Projeto-Mobile-LeonardoAlves-KaioSchoeneman/blob/main/images_report/already%20a%20member.png?raw=true)\
 \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![alt text](https://github.com/Kaiobr13/Projeto-Mobile-LeonardoAlves-KaioSchoeneman/blob/main/images_report/pós%20login.png?raw=true)
-![alt text](https://github.com/Kaiobr13/Projeto-Mobile-LeonardoAlves-KaioSchoeneman/blob/main/images_report/menu%20player.png?raw=true)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![alt text](https://github.com/Kaiobr13/Projeto-Mobile-LeonardoAlves-KaioSchoeneman/blob/main/images_report/menu%20player.png?raw=true)
 ![alt text](https://github.com/Kaiobr13/Projeto-Mobile-LeonardoAlves-KaioSchoeneman/blob/main/images_report/map.png?raw=true)

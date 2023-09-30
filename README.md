@@ -9,9 +9,17 @@
   ## Introdução
   **Nome do Projeto: SportBuddy**
 
-O nosso projeto será sobre uma aplicação de matchmaking pensada para o desenvolvimento e crescimento de uma comunidade que procura realizar desporto ou atividade física em grupo. Desejamos criar um ambiente onde todos possam ter acesso de forma facil e de acordo com os filtros de localização e de desporto escolhido, será realizado um matchmaking com outros atletas com interesses iguais aos seus onde os mesmos podem se tornar amizades ativas e companheiros de treino num futuro próximo. Através do poder que o desporto tem de unir as pessoas, nós visamos elevar o conceito de team work e matchmaking a outro nível criando assim uma aplicação capaz de unir pessoas para fazer o que mais amam.
+O nosso projeto será sobre uma aplicação de matchmaking pensada para o desenvolvimento e crescimento de uma comunidade que procura realizar desporto ou atividade física em grupo. Desejamos criar um ambiente onde todos possam ter acesso de forma facil e de acordo com os filtros de localização e de desporto escolhido, será realizado um matchmaking com outros atletas com interesses iguais aos seus onde os mesmos podem se tornar amizades ativas e companheiros de treino num futuro próximo. Através do poder que o desporto tem de unir as pessoas, nós visamos elevar o conceito de teamwork e matchmaking a outro nível criando assim uma aplicação capaz de unir pessoas para fazer o que mais amam.
 
 ## Objetivos
+
+**Quais são os objetivos da aplicação?**
+
+Com a nossa aplicação procuramos criar algo inusitado e completamente revolucionário. Algo novo uma ideia nova com um propósito novo! Uma aplicação de Matchmaking nomeada de SportBuddy onde é possível para os amantes de desporto e atletas encontrarem parceiros para treinar/jogar consigo, por exemplo o mundo do basket, é possível através da nossa ferramenta escolher um campo privado com toda a informação necessária para o aluguer do espaço e combinar com outros 9 jogadores para se divertirem e competirem, tal como na corrida é possível encontrar um companheiro de corrida.
+
+Contamos com tecnologias de ponta e uma aplicação bem estruturada e muito intuitiva, fácil de usar de modo a criar uma comunidade incrível onde o desporto que tanto amamos é mais um laço para amizades futuras.
+
+Para tal, e como nos foi proposto iremos criar esta aplicação com a utilização do Android Studio com auxilio da linguagem Java, para a base de dados vamos utilizar o MySQL onde serão guardadas todas as informações de Registo do utilizador, e todos os movimentos na aplicação como “Encontros bem sucedidos”, “Encontros Cancelados” entre outros. 
 
 **Requisitos não Funcionais:**
 - Possuir o Java instalado
@@ -41,3 +49,6 @@ A unidade curricular de Programação de Dispositivos Móveis será de grande im
 Ao decorrer do semestre e das apresentações, utilizaremos as estratégias ensinadas pela docente para aprimorar nossas habilidades com as apresentações.
 
 ## Mockups e Casos de Uso
+
+
+

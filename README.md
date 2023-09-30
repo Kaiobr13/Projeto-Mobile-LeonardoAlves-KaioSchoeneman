@@ -50,5 +50,12 @@ Ao decorrer do semestre e das apresentações, utilizaremos as estratégias ensi
 
 ## Mockups e Casos de Uso
 
-
-
+![alt text](https://github.com/Kaiobr13/Projeto-Mobile-LeonardoAlves-KaioSchoeneman/blob/main/images_report/first%20image.png?raw=true)\
+\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![alt text](https://github.com/Kaiobr13/Projeto-Mobile-LeonardoAlves-KaioSchoeneman/blob/main/images_report/new%20here.png?raw=true)\
+\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![alt text](https://github.com/Kaiobr13/Projeto-Mobile-LeonardoAlves-KaioSchoeneman/blob/main/images_report/already%20a%20member.png?raw=true)\
+\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![alt text](https://github.com/Kaiobr13/Projeto-Mobile-LeonardoAlves-KaioSchoeneman/blob/main/images_report/pós%20login.png?raw=true)
+![alt text](https://github.com/Kaiobr13/Projeto-Mobile-LeonardoAlves-KaioSchoeneman/blob/main/images_report/menu%20player.png?raw=true)
+![alt text](https://github.com/Kaiobr13/Projeto-Mobile-LeonardoAlves-KaioSchoeneman/blob/main/images_report/map.png?raw=true)

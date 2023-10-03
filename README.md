@@ -3,7 +3,7 @@
 ## Indíce
 - [Introdução](#introdução)
 - [Objetivos](#objetivos)
-- [Englobamentos das UCs](#englobamento-das-ucs)
+- [Implementação das UCs](#implementação-das-ucs)
 - [Mockups e Casos de Uso](#mockups-e-casos-de-uso)
 
 ## Introdução
@@ -33,7 +33,7 @@ Para tal, e como nos foi proposto iremos criar esta aplicação com a utilizaç�
 - O dispositivo móvel ser android (pensamos em expandir ao IOS futuramente)
 - Ter acesso ao servidor da base de dados
 
-## Englobamento das UCs
+## Implementação das UCs
 
 **Matemática Discreta**
 

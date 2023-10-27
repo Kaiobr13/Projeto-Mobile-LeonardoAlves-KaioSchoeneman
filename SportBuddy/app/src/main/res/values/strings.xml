@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SportBuddy</string>
+    <string name="app_greetings">Welcome to SportBuddy!</string>
+    <string name="app_greetings2">The future of sports matchmaking</string>
+    <string name="register">New here?</string>
+    <string name="login">Already a member</string>
+    <string name="terms">Terms of service</string>
+    <string name="logo">Logo</string>
+</resources>

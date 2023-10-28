@@ -6,4 +6,11 @@
     <string name="login">Already a member</string>
     <string name="terms">Terms of service</string>
     <string name="logo">Logo</string>
+    <string name="profile_picture">Profile</string>
+    <string name="profile_name">Your name here</string>
+    <string name="profile_age">Your age here</string>
+    <string name="tiers">Tier 1</string>
+    <string name="acquire_gold_silver">Acquire Gold/Silver</string>
+    <string name="stats">Stats</string>
+    <string name="home">Home</string>
 </resources>

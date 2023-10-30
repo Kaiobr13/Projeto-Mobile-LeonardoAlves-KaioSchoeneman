@@ -13,4 +13,12 @@
     <string name="acquire_gold_silver">Acquire Gold/Silver</string>
     <string name="stats">Stats</string>
     <string name="home">Home</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="username_hint">Insert your username</string>
+    <string name="password_hint">Insert your password</string>
+    <string name="switch1">Keep me signed in</string>
+    <string name="forgot_password">Forget your password?</string>
+    <string name="next_page">Next</string>
+    <string name="previous_page">Back</string>
 </resources>

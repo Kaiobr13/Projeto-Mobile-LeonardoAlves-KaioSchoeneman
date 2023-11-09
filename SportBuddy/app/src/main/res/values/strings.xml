@@ -16,9 +16,16 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="username_hint">Insert your username</string>
+    <string name="email_hint">Insert your email</string>
     <string name="password_hint">Insert your password</string>
+    <string name="verify_password">Verify your password</string>
+    <string name="birthday">Insert your birthday</string>
     <string name="switch1">Keep me signed in</string>
     <string name="forgot_password">Forget your password?</string>
     <string name="next_page">Next</string>
     <string name="previous_page">Back</string>
+    <string name="etapa1">Part1/4</string>
+    <string name="etapa2">Part2/4</string>
+    <string name="etapa3">Part3/4</string>
+    <string name="etapa4">Part4/4</string>
 </resources>

@@ -106,7 +106,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/register_text_part1.2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="180dp"
@@ -114,15 +114,15 @@
             android:text="@string/etapa1"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
-            app:layout_constraintEnd_toEndOf="@+id/tableLayout2"
-            app:layout_constraintHorizontal_bias="0.439"
-            app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+            app:layout_constraintBottom_toTopOf="@+id/register_table1.2"
+            app:layout_constraintEnd_toEndOf="@+id/register_table1.2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/register_table1.2"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.88" />
 
         <TableLayout
-            android:id="@+id/tableLayout2"
+            android:id="@+id/register_table1.2"
             android:layout_width="360dp"
             android:layout_height="450dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -135,14 +135,15 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/editTextTextEmailAddress"
+                    android:id="@+id/register_edit_user1.2"
                     android:layout_width="360dp"
                     android:layout_height="90dp"
                     android:ems="10"
+                    android:hint="@string/username_hint"
                     android:inputType="textEmailAddress"
-                    android:text="@string/username_hint"
                     android:textAlignment="center"
-                    android:textColor="#FFFFFF" />
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#BDBDBD" />
             </TableRow>
 
             <TableRow
@@ -150,14 +151,15 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/editTextTextEmailAddress3"
+                    android:id="@+id/register_edit_email1.2"
                     android:layout_width="360dp"
                     android:layout_height="90dp"
                     android:ems="10"
+                    android:hint="@string/email_hint"
                     android:inputType="textEmailAddress"
-                    android:text="@string/email_hint"
                     android:textAlignment="center"
-                    android:textColor="#FFFFFF" />
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#BDBDBD" />
             </TableRow>
 
             <TableRow
@@ -165,7 +167,7 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/editTextTextPassword"
+                    android:id="@+id/register_edit_pass1.2"
                     android:layout_width="360dp"
                     android:layout_height="90dp"
                     android:ems="10"
@@ -181,7 +183,7 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/editTextTextPassword3"
+                    android:id="@+id/register_verify_pass1.2"
                     android:layout_width="360dp"
                     android:layout_height="90dp"
                     android:ems="10"
@@ -197,7 +199,7 @@
                 android:layout_height="90dp">
 
                 <EditText
-                    android:id="@+id/editTextDate"
+                    android:id="@+id/register_birthday1.2"
                     android:layout_width="360dp"
                     android:layout_height="90dp"
                     android:ems="10"
@@ -209,36 +211,37 @@
         </TableLayout>
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/register_button_next1.2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#FF9800"
             android:text="@string/next_page"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/tableLayout2"
+            app:layout_constraintEnd_toEndOf="@+id/register_table1.2"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/button5"
-            app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
+            app:layout_constraintStart_toEndOf="@+id/register_button_back1.2"
+            app:layout_constraintTop_toBottomOf="@+id/register_table1.2"
             app:layout_constraintVertical_bias="0.196"
             tools:ignore="TextContrastCheck" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/register_button_back1.2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#FF9800"
             android:text="@string/previous_page"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/tableLayout2"
+            app:layout_constraintEnd_toEndOf="@+id/register_table1.2"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tableLayout2"
-            app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
+            app:layout_constraintStart_toStartOf="@+id/register_table1.2"
+            app:layout_constraintTop_toBottomOf="@+id/register_table1.2"
             app:layout_constraintVertical_bias="0.196"
             tools:ignore="TextContrastCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/register_part2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
@@ -246,6 +249,106 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/register_text_part2.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="200dp"
+            android:text="@string/etapa2"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/register_table2.2"
+            app:layout_constraintEnd_toEndOf="@+id/register_table2.2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/register_table2.2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.889" />
+
+        <TableLayout
+            android:id="@+id/register_table2.2"
+            android:layout_width="360dp"
+            android:layout_height="270dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.575">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/register_insert_phone"
+                    oid:layout_height="90dp"
+                    android:layout_width="360dp"
+                    android:layout_height="90dp"
+                    android:ems="10"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#BDBDBD" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/register_switch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90dp"
+                    android:text="@string/policies"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/register_switch2"
+                    android:layout_width="300dp"
+                    android:layout_height="90dp"
+                    android:text="@string/switch_privacy_policies"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/register_button_back2.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF9800"
+            android:text="@string/previous_page"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/register_button_create2.2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/register_table2.2"
+            app:layout_constraintTop_toBottomOf="@+id/register_table2.2"
+            app:layout_constraintVertical_bias="0.292"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/register_button_create2.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#FF9800"
+            android:text="@string/create_account"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/register_table2.2"
+            app:layout_constraintTop_toBottomOf="@+id/register_table2.2"
+            app:layout_constraintVertical_bias="0.292"
+            tools:ignore="TextContrastCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

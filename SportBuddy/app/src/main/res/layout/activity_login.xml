@@ -87,11 +87,11 @@
         tools:ignore="ImageContrastCheck" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/login_switch"
         android:layout_width="206dp"
         android:layout_height="56dp"
         android:layout_marginTop="36dp"
-        android:text="@string/switch1"
+        android:text="@string/switch_signedIN"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/tableLayout"
@@ -106,10 +106,10 @@
         android:layout_marginTop="48dp"
         android:text="@string/forgot_password"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/switch1"
+        app:layout_constraintEnd_toEndOf="@+id/login_switch"
         app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="@+id/switch1"
-        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+        app:layout_constraintStart_toStartOf="@+id/login_switch"
+        app:layout_constraintTop_toBottomOf="@+id/login_switch" />
 
     <Button
         android:id="@+id/button3"

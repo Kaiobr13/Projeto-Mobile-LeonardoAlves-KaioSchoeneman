@@ -155,6 +155,7 @@
                     android:id="@+id/register_edit_email1.2"
                     android:layout_width="360dp"
                     android:layout_height="90dp"
+                    android:autofillHints="emailAddress"
                     android:ems="10"
                     android:hint="@string/email_hint"
                     android:inputType="textEmailAddress"
@@ -204,10 +205,11 @@
                     android:layout_width="360dp"
                     android:layout_height="90dp"
                     android:ems="10"
+                    android:hint="@string/birthday"
                     android:inputType="date"
-                    android:text="@string/birthday"
                     android:textAlignment="center"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textColorHint="#BDBDBD" />
             </TableRow>
         </TableLayout>
 
@@ -283,7 +285,6 @@
 
                 <EditText
                     android:id="@+id/register_insert_phone"
-                    oid:layout_height="90dp"
                     android:layout_width="360dp"
                     android:layout_height="90dp"
                     android:ems="10"
@@ -291,14 +292,15 @@
                     android:inputType="phone"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
-                    android:textColorHint="#BDBDBD" />
+                    android:textColorHint="#BDBDBD"
+                    android:autofillHints="phone"/>
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <Switch
+                <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/register_switch"
                     android:layout_width="fill_parent"
                     android:layout_height="90dp"
@@ -312,7 +314,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <Switch
+                <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/register_switch2"
                     android:layout_width="300dp"
                     android:layout_height="90dp"

@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-<<<<<<< HEAD
         setupComponents();
     }
 
@@ -26,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         // setonclicklistenr do button
         //     Intent intent = new Intent(MainActivity.this, LoginActivity.class);
         //     startActivity(intent);
-=======
         btnlogin = (Button)findViewById(R.id.main_login_button);
 
         btnlogin.setOnClickListener(new View.OnClickListener() {

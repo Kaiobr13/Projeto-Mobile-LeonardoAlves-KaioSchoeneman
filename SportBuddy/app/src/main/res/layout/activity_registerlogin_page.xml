@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#B2000000"
     android:visibility="visible"
-    tools:context=".MainActivity">
+    tools:context=".RegisterLoginActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main_page"

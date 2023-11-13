@@ -1,4 +1,5 @@
 <resources>
+    <!-- Main Activity -->
     <string name="app_name">SportBuddy</string>
     <string name="app_greetings">Welcome to SportBuddy!</string>
     <string name="app_greetings2">The future of sports matchmaking</string>
@@ -6,12 +7,17 @@
     <string name="login">Already a member</string>
     <string name="terms">Terms of service</string>
     <string name="logo">Logo</string>
+
+    <!-- Profile Activity -->
     <string name="profile_picture">Profile</string>
     <string name="profile_name">Your name here</string>
     <string name="profile_age">Your age here</string>
     <string name="tiers">Tier 1</string>
     <string name="acquire_gold_silver">Acquire Gold/Silver</string>
     <string name="stats">Stats</string>
+    <string name="stats_page">Your stats will be displayed here</string>
+
+    <!-- Login/Register Activity -->
     <string name="home">Home</string>
     <string name="username">Username</string>
     <string name="password">Password</string>

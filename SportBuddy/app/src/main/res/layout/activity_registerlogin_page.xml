@@ -12,9 +12,11 @@
         android:id="@+id/main_page"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="-180dp"
-        tools:layout_editor_absoluteY="-327dp">
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/main_applogo"
@@ -217,6 +219,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#FF9800"
+            android:drawableEnd="@drawable/arrow_forward_ios"
+            android:drawableTint="@color/white"
             android:text="@string/next_page"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/register_table1.2"
@@ -231,6 +235,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#FF9800"
+            android:drawableLeft="@drawable/arrow_back_ios"
+            android:drawableTint="@color/white"
             android:text="@string/previous_page"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/register_table1.2"
@@ -246,7 +252,7 @@
         android:id="@+id/register_part2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -286,13 +292,13 @@
                     android:id="@+id/register_insert_phone"
                     android:layout_width="360dp"
                     android:layout_height="90dp"
+                    android:autofillHints="phone"
                     android:ems="10"
                     android:hint="@string/phone_number"
                     android:inputType="phone"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
-                    android:textColorHint="#BDBDBD"
-                    android:autofillHints="phone"/>
+                    android:textColorHint="#BDBDBD" />
             </TableRow>
 
             <TableRow
@@ -330,6 +336,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#FF9800"
+            android:drawableLeft="@drawable/arrow_back_ios"
+            android:drawableTint="@color/white"
             android:text="@string/previous_page"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/register_button_create2.2"
@@ -345,6 +353,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"
             android:backgroundTint="#FF9800"
+            android:drawableEnd="@drawable/add"
+            android:drawableTint="@color/white"
             android:text="@string/create_account"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/register_table2.2"

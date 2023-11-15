@@ -12,11 +12,13 @@
         android:id="@+id/main_page"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:id="@+id/main_applogo"
@@ -102,6 +104,7 @@
         android:id="@+id/register_part1"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:backgroundTint="#FF9800"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -138,14 +141,15 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/register_edit_user1.2"
+                    android:id="@+id/register_edit_user"
                     android:layout_width="360dp"
                     android:layout_height="90dp"
+                    android:autofillHints="no"
                     android:ems="10"
                     android:hint="@string/username_hint"
-                    android:inputType="textEmailAddress"
+                    android:inputType="text"
                     android:textAlignment="center"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#BDBDBD"
                     android:textColorHint="#BDBDBD" />
             </TableRow>
 
@@ -154,9 +158,10 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/register_edit_email1.2"
+                    android:id="@+id/register_edit_email"
                     android:layout_width="360dp"
                     android:layout_height="90dp"
+                    android:autofillHints="emailAddress"
                     android:ems="10"
                     android:hint="@string/email_hint"
                     android:inputType="textEmailAddress"
@@ -170,11 +175,12 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/register_edit_pass1.2"
+                    android:id="@+id/register_edit_pass"
                     android:layout_width="360dp"
                     android:layout_height="90dp"
                     android:ems="10"
                     android:hint="@string/password_hint"
+                    android:importantForAutofill="no"
                     android:inputType="textPassword"
                     android:textAlignment="center"
                     android:textColor="@color/white"
@@ -186,9 +192,10 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/register_verify_pass1.2"
+                    android:id="@+id/register_verify_pass"
                     android:layout_width="360dp"
                     android:layout_height="90dp"
+                    android:autofillHints="no"
                     android:ems="10"
                     android:hint="@string/verify_password"
                     android:inputType="textPassword"
@@ -202,9 +209,10 @@
                 android:layout_height="90dp">
 
                 <EditText
-                    android:id="@+id/register_birthday1.2"
+                    android:id="@+id/register_birthday"
                     android:layout_width="360dp"
                     android:layout_height="90dp"
+                    android:autofillHints="no"
                     android:ems="10"
                     android:hint="@string/birthday"
                     android:inputType="date"
@@ -214,37 +222,36 @@
             </TableRow>
         </TableLayout>
 
-        <Button
-            android:id="@+id/register_button_next1.2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageButton
+            android:id="@+id/register_backbut1"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
             android:backgroundTint="#FF9800"
-            android:drawableEnd="@drawable/arrow_forward_ios"
-            android:drawableTint="@color/white"
-            android:text="@string/next_page"
+            android:contentDescription="@string/previous_page"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/register_table1.2"
+            app:layout_constraintTop_toBottomOf="@+id/register_table1.2"
+            app:layout_constraintVertical_bias="0.201"
+            app:srcCompat="@drawable/arrow_back_ios_new"
+            app:tint="@color/white"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/register_nextbut1"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#FF9800"
+            android:contentDescription="@string/next_page"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/register_table1.2"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/register_button_back1.2"
+            app:layout_constraintStart_toEndOf="@+id/register_backbut1"
             app:layout_constraintTop_toBottomOf="@+id/register_table1.2"
-            app:layout_constraintVertical_bias="0.196"
-            tools:ignore="TextContrastCheck" />
-
-        <Button
-            android:id="@+id/register_button_back1.2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FF9800"
-            android:drawableLeft="@drawable/arrow_back_ios"
-            android:drawableTint="@color/white"
-            android:text="@string/previous_page"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/register_table1.2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/register_table1.2"
-            app:layout_constraintTop_toBottomOf="@+id/register_table1.2"
-            app:layout_constraintVertical_bias="0.196"
-            tools:ignore="TextContrastCheck" />
+            app:layout_constraintVertical_bias="0.201"
+            app:srcCompat="@drawable/arrow_forward_ios"
+            app:tint="@color/white"
+            tools:ignore="ImageContrastCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -252,14 +259,14 @@
         android:id="@+id/register_part2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/register_text_part2.2"
+            android:id="@+id/register_text_part2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="180dp"
@@ -267,15 +274,15 @@
             android:text="@string/etapa2"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/register_table2.2"
-            app:layout_constraintEnd_toEndOf="@+id/register_table2.2"
+            app:layout_constraintBottom_toTopOf="@+id/register_table2"
+            app:layout_constraintEnd_toEndOf="@+id/register_table2"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/register_table2.2"
+            app:layout_constraintStart_toStartOf="@+id/register_table2"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.889" />
 
         <TableLayout
-            android:id="@+id/register_table2.2"
+            android:id="@+id/register_table2"
             android:layout_width="360dp"
             android:layout_height="270dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -285,7 +292,7 @@
             app:layout_constraintVertical_bias="0.575">
 
             <TableRow
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent">
 
                 <EditText
@@ -321,7 +328,7 @@
 
                 <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/register_switch2"
-                    android:layout_width="300dp"
+                    android:layout_width="fill_parent"
                     android:layout_height="90dp"
                     android:text="@string/switch_privacy_policies"
                     android:textAlignment="center"
@@ -332,35 +339,35 @@
         </TableLayout>
 
         <Button
-            android:id="@+id/register_button_back2.2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FF9800"
-            android:drawableLeft="@drawable/arrow_back_ios"
-            android:drawableTint="@color/white"
-            android:text="@string/previous_page"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/register_button_create2.2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/register_table2.2"
-            app:layout_constraintTop_toBottomOf="@+id/register_table2.2"
-            app:layout_constraintVertical_bias="0.292"
-            tools:ignore="TextContrastCheck" />
-
-        <Button
-            android:id="@+id/register_button_create2.2"
+            android:id="@+id/register_button_create2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"
             android:backgroundTint="#FF9800"
-            android:drawableEnd="@drawable/add"
+            android:drawableEnd="@drawable/person_add"
             android:drawableTint="@color/white"
             android:text="@string/create_account"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/register_table2.2"
-            app:layout_constraintTop_toBottomOf="@+id/register_table2.2"
+            app:layout_constraintEnd_toEndOf="@+id/register_table2"
+            app:layout_constraintTop_toBottomOf="@+id/register_table2"
             app:layout_constraintVertical_bias="0.292"
             tools:ignore="TextContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/register_backbut2"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#FF9800"
+            android:contentDescription="@string/previous_page"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/register_button_create2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/register_table2"
+            app:layout_constraintTop_toBottomOf="@+id/register_table2"
+            app:layout_constraintVertical_bias="0.292"
+            app:srcCompat="@drawable/arrow_back_ios_new"
+            app:tint="@color/white"
+            tools:ignore="ImageContrastCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

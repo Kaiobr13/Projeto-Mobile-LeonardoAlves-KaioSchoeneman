@@ -15,7 +15,7 @@
     <string name="tiers">Tier 1</string>
     <string name="acquire_gold_silver">Acquire Gold/Silver</string>
     <string name="stats">Stats</string>
-    <string name="stats_page">Your stats will be displayed here</string>
+    <string name="stats_page">Your stats are displayed here</string>
 
     <!-- Login/Register Activity -->
     <string name="home">Home</string>
@@ -29,11 +29,13 @@
     <string name="switch_signedIN">Keep me signed in</string>
     <string name="forgot_password">Forget your password?</string>
     <string name="phone_number">Insert your phone number</string>
-    <string name="next_page">Next</string>
-    <string name="previous_page">Back</string>
     <string name="create_account">Create account</string>
     <string name="policies">I agree with...</string>
     <string name="switch_privacy_policies">I agree with Privacy Policies</string>
     <string name="etapa1">Part1/2</string>
     <string name="etapa2">Part2/2</string>
+
+    <!-- General -->
+    <string name="next_page">Next</string>
+    <string name="previous_page">Back</string>
 </resources>

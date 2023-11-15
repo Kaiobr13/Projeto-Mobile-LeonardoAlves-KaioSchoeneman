@@ -10,6 +10,7 @@ import android.widget.Button;
 public class RegisterLoginActivity extends AppCompatActivity {
 
     private Button btnlogin;
+   // private Button btnregister;
 
 
     @Override
@@ -21,11 +22,15 @@ public class RegisterLoginActivity extends AppCompatActivity {
     }
 
     private void setupComponents() {
-        // TODO: findVIewbyID(loginbutton)
-        // setonclicklistenr do button
-        //     Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-        //     startActivity(intent);
-        btnlogin = (Button)findViewById(R.id.main_login_button);
+        btnlogin = findViewById(R.id.main_login_button);
+        //btnregister = findViewById(R.id.main_register_button);
+
+        //btnregister.setOnClickListener(new View.OnClickListener() {
+        //    @Override
+        //  public void onClick(View v) {
+        //startActivity(new Intent(RegisterLoginActivity.this, register_part1.class));
+        //    }
+        //});
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override

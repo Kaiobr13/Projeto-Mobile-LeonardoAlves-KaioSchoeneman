@@ -10,7 +10,7 @@ import android.widget.Button;
 public class RegisterLoginActivity extends AppCompatActivity {
 
     private Button btnlogin;
-   // private Button btnregister;
+    //private Button btnregister;
 
 
     @Override
@@ -26,10 +26,10 @@ public class RegisterLoginActivity extends AppCompatActivity {
         //btnregister = findViewById(R.id.main_register_button);
 
         //btnregister.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //  public void onClick(View v) {
+            //@Override
+          //public void onClick(View v) {
         //startActivity(new Intent(RegisterLoginActivity.this, register_part1.class));
-        //    }
+            //}
         //});
 
         btnlogin.setOnClickListener(new View.OnClickListener() {

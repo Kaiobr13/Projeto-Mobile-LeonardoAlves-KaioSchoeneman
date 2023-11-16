@@ -12,7 +12,7 @@
         android:id="@+id/main_page"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -70,7 +70,8 @@
             app:layout_constraintEnd_toEndOf="@+id/main_greetings2"
             app:layout_constraintStart_toStartOf="@+id/main_greetings2"
             app:layout_constraintTop_toBottomOf="@+id/main_greetings2"
-            app:rippleColor="#000000" />
+            app:rippleColor="#000000"
+            app:shapeAppearance="@style/Widget.AppCompat.ImageButton" />
 
         <Button
             android:id="@+id/main_login_button"
@@ -83,6 +84,7 @@
             app:layout_constraintEnd_toEndOf="@+id/main_register_button"
             app:layout_constraintStart_toStartOf="@+id/main_register_button"
             app:layout_constraintTop_toBottomOf="@+id/main_register_button"
+            app:shapeAppearance="@style/Widget.AppCompat.ImageButton"
             tools:ignore="TextContrastCheck" />
 
         <TextView
@@ -259,7 +261,7 @@
         android:id="@+id/register_part2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -351,6 +353,7 @@
             app:layout_constraintEnd_toEndOf="@+id/register_table2"
             app:layout_constraintTop_toBottomOf="@+id/register_table2"
             app:layout_constraintVertical_bias="0.292"
+            app:shapeAppearance="@style/Widget.AppCompat.ImageButton"
             tools:ignore="TextContrastCheck" />
 
         <ImageButton

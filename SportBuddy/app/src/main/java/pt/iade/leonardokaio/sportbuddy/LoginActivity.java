@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 public class LoginActivity extends AppCompatActivity {
 
     private ImageButton backlogbtn;
+    private ImageButton nextlogbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,12 +22,19 @@ public class LoginActivity extends AppCompatActivity {
 
     private void setupComponents() {
         backlogbtn = findViewById(R.id.login_backbut);
-
+        nextlogbtn = findViewById(R.id.login_nextbut);
 
         backlogbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, RegisterLoginActivity.class));
+                startActivity(new Intent(LoginActivity.this, WelcomeActivity.class));
+            }
+        });
+
+        nextlogbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, MainActivity.class));
             }
         });
     }

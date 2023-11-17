@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2000000"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#B2000000"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/home_mapbut"
+                android:layout_width="136dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#FF9800"
+                android:contentDescription="@string/map_button"
+                app:srcCompat="@drawable/map" />
+
+            <ImageButton
+                android:id="@+id/home_matchbut"
+                android:layout_width="136dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#FF9800"
+                android:contentDescription="@string/start_game_button"
+                android:src="@drawable/sports" />
+
+            <ImageButton
+                android:id="@+id/home_profilebut"
+                android:layout_width="136dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#FF9800"
+                android:contentDescription="@string/profile_button"
+                android:src="@drawable/person" />
+
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,8 +10,8 @@
 
     <!-- Profile Activity -->
     <string name="profile_picture">Profile</string>
-    <string name="profile_name">Your name here</string>
-    <string name="profile_age">Your age here</string>
+    <string name="profile_name">Full name</string>
+    <string name="profile_age">Age</string>
     <string name="tiers">Tier 1</string>
     <string name="acquire_gold_silver">Acquire Gold/Silver</string>
     <string name="stats">Stats</string>
@@ -30,10 +30,10 @@
     <string name="forgot_password">Forget your password?</string>
     <string name="phone_number">Insert your phone number</string>
     <string name="create_account">Create account</string>
-    <string name="policies">I agree with...</string>
+    <string name="policies">I agree with</string>
     <string name="switch_privacy_policies">I agree with Privacy Policies</string>
-    <string name="etapa1">Part1/2</string>
-    <string name="etapa2">Part2/2</string>
+    <string name="etapa1">Part 1.2</string>
+    <string name="etapa2">Part 2.2</string>
 
     <!-- Main Activity -->
     <string name="map_button">Map</string>
@@ -43,4 +43,22 @@
     <!-- General -->
     <string name="next_page">Next</string>
     <string name="previous_page">Back</string>
+    <string name="close_page">Close page</string>
+
+    <!-- Settings -->
+    <string name="account_settings">Account Settings</string>
+    <string name="personal_profile">Personal Profile</string>
+    <string name="match_preferences">Match Preferences</string>
+    <string name="notifications">Notifications</string>
+    <string name="delete_account">Delete SportBuddy account</string>
+    <string name="edit_pp">Edit profile photo</string>
+    <string name="nickname">Nickname</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="nationality">Nationality</string>
+    <string name="email">E-mail Address</string>
+    <string name="match_suggestions">Receive match suggestions</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="email_notifications">Email Notifications</string>
+    <string name="delete_acc">Are you sure to delete your account?</string>
+    <string name="delete">DELETE</string>
 </resources>

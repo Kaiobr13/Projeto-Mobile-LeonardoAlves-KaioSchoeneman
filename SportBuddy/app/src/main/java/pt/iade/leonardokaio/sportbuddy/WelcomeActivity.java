@@ -38,9 +38,9 @@ public class WelcomeActivity extends AppCompatActivity {
         btnregister.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ConstraintLayout main_page = findViewById(R.id.welcome_page);
+                ConstraintLayout welcome_page = findViewById(R.id.welcome_page);
                 ConstraintLayout register_part1 = findViewById(R.id.register_part1);
-                main_page.setVisibility(View.GONE);
+                welcome_page.setVisibility(View.GONE);
                 register_part1.setVisibility(View.VISIBLE);
             }
         });
@@ -55,9 +55,9 @@ public class WelcomeActivity extends AppCompatActivity {
         btnresback1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ConstraintLayout main_page = findViewById(R.id.welcome_page);
+                ConstraintLayout welcome_page = findViewById(R.id.welcome_page);
                 ConstraintLayout register_part1 = findViewById(R.id.register_part1);
-                main_page.setVisibility(View.VISIBLE);
+                welcome_page.setVisibility(View.VISIBLE);
                 register_part1.setVisibility(View.GONE);
             }
         });

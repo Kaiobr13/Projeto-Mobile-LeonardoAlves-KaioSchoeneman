@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    //private ImageButton profilebut;
+    private ImageButton gotoprofilebtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,13 +20,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupComponents() {
-            //profilebut = findViewById(R.id.home_profilebut);
 
-            //profilebut.setOnClickListener(new View.OnClickListener() {
-               // @Override
-                //public void onClick(View v) {
-                    //startActivity(new Intent(MainActivity.this, ProfileActivity.class));
-                //}
-            //});
+        gotoprofilebtn = findViewById(R.id.home_profilebut);
+
+        gotoprofilebtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(MainActivity.this, ProfileActivity.class));
+                }
+            });
     }
 }

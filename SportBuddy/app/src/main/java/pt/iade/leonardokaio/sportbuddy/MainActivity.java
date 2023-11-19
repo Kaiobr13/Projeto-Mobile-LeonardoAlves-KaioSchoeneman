@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageButton gotoprofilebtn;
+    private ImageButton btngotoprof;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupComponents() {
 
-        gotoprofilebtn = findViewById(R.id.home_profilebut);
+        btngotoprof = findViewById(R.id.home_profilebut);
 
-        gotoprofilebtn.setOnClickListener(new View.OnClickListener() {
+        btngotoprof.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(MainActivity.this, ProfileActivity.class));

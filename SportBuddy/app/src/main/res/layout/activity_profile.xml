@@ -116,6 +116,20 @@
             app:tint="@color/white"
             tools:ignore="ImageContrastCheck" />
 
+        <ImageButton
+            android:id="@+id/profile_setbut"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#FF9800"
+            android:contentDescription="@string/settings"
+            app:tint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/settings"
+            tools:ignore="ImageContrastCheck" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout

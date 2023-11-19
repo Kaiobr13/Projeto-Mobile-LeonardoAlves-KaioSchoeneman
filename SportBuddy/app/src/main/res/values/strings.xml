@@ -16,6 +16,7 @@
     <string name="acquire_gold_silver">Acquire Gold/Silver</string>
     <string name="stats">Stats</string>
     <string name="stats_page">Your stats are displayed here</string>
+    <string name="settings">Settings But</string>
 
     <!-- Login/Register Activity -->
     <string name="home">Home</string>

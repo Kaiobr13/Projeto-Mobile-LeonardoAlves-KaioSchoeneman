@@ -10,9 +10,10 @@ import android.widget.ImageButton;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    private ImageButton gotomainbtn;
-    private ImageButton statsbtn;
-    private ImageButton closestats;
+    private ImageButton btngotomain;
+    private ImageButton btnstats;
+    private ImageButton btnclosestats;
+    private ImageButton btngotoset;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,18 +25,19 @@ public class ProfileActivity extends AppCompatActivity {
 
     private void setupComponents() {
 
-        gotomainbtn = findViewById(R.id.profile_homebut);
-        statsbtn = findViewById(R.id.profile_statsbut);
-        closestats = findViewById(R.id.stats_closepage);
+        btngotomain = findViewById(R.id.profile_homebut);
+        btnstats = findViewById(R.id.profile_statsbut);
+        btnclosestats = findViewById(R.id.stats_closepage);
+        btngotoset = findViewById(R.id.profile_setbut);
 
-        gotomainbtn.setOnClickListener(new View.OnClickListener() {
+        btngotomain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ProfileActivity.this, MainActivity.class));
             }
         });
 
-        statsbtn.setOnClickListener(new View.OnClickListener() {
+        btnstats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ConstraintLayout profile_constraint = findViewById(R.id.profile_constraint);
@@ -45,13 +47,20 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
-        closestats.setOnClickListener(new View.OnClickListener() {
+        btnclosestats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ConstraintLayout stats_constraint = findViewById(R.id.stats_constraint);
                 ConstraintLayout profile_constraint = findViewById(R.id.profile_constraint);
                 stats_constraint.setVisibility(View.GONE);
                 profile_constraint.setVisibility(View.VISIBLE);
+            }
+        });
+
+        btngotoset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileActivity.this, SettingsActivity.class));
             }
         });
     }

@@ -41,6 +41,9 @@
     <string name="start_game_button">Matchmaking</string>
     <string name="profile_button">Profile</string>
 
+    <!-- MM Activity-->
+    <string name="seekbar_text">How far you want to go?</string>
+
     <!-- General -->
     <string name="next_page">Next</string>
     <string name="previous_page">Back</string>

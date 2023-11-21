@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton btngotoprof;
     private ImageButton btngotomap;
 
+    private ImageButton btngotoMM;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         btngotoprof = findViewById(R.id.home_profilebut);
         btngotomap = findViewById(R.id.home_mapbut);
+        btngotoMM = findViewById(R.id.home_matchbut);
 
         btngotoprof.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -31,10 +33,18 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(MainActivity.this, ProfileActivity.class));
                 }
             });
+
         btngotomap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, MapsActivity.class));
+            }
+        });
+
+        btngotoMM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MMActivity.class));
             }
         });
     }

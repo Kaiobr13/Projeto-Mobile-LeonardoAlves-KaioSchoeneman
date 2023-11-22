@@ -323,6 +323,7 @@
                     android:hint="@string/nation_hint"
                     android:inputType="textPostalAddress"
                     android:textAlignment="center"
+                    android:textColor="@color/white"
                     android:textColorHint="#BDBDBD" />
             </TableRow>
 

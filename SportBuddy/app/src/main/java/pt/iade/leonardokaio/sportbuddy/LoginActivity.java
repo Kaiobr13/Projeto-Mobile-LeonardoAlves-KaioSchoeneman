@@ -5,12 +5,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
     private ImageButton btnbacklog;
     private ImageButton btnnextlog;
+    private EditText textUsername;
+    private EditText textPassword;
+
+    public boolean CheckEntrys(View view){
+        textUsername = (EditText)findViewById(R.id.login_username_text);
+        textPassword = (EditText)findViewById(R.id.login_password_text);
+        if(textPassword.getText().toString().equals("")||textUsername.getText().toString().equals(""))
+        {
+            return false;
+        }
+        return true;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +48,11 @@ public class LoginActivity extends AppCompatActivity {
         btnnextlog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                if(!CheckEntrys(v)){
+                    Toast.makeText(getApplicationContext(),"Preencha as informações que faltam!", Toast.LENGTH_LONG).show();
+                } else {
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                }
             }
         });
     }

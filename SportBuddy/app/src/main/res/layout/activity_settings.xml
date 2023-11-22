@@ -112,16 +112,16 @@
 
         <ImageView
             android:id="@+id/account_pp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_marginTop="128dp"
             android:contentDescription="@string/profile_picture"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.144"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="ImageContrastCheck"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:srcCompat="@drawable/user"
+            tools:ignore="ImageContrastCheck" />
 
         <Button
             android:id="@+id/account_editpp"

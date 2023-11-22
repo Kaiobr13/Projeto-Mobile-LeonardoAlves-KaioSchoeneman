@@ -50,6 +50,16 @@ public class WelcomeActivity extends AppCompatActivity {
         }
         return true;
     }
+
+    public boolean VerifyPass(View view) {
+        registereditPass = (EditText) findViewById(R.id.register_edit_pass);
+        registerverifyPass = (EditText) findViewById(R.id.register_verify_pass);
+        if (!registerverifyPass.getText().toString().equals(registereditPass.getText().toString()))
+        {
+            return false;
+        }
+        return true;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,7 +109,9 @@ public class WelcomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!CheckEntrysP1(v)){
                     Toast.makeText(getApplicationContext(), "Preencha as informações que faltam!", Toast.LENGTH_LONG).show();
-            } else {
+            } else if(!VerifyPass(v)) {
+                    Toast.makeText(getApplicationContext(), "Suas senhas não são iguais!", Toast.LENGTH_LONG).show();
+                } else {
                     ConstraintLayout register_part1 = findViewById(R.id.register_part1);
                     ConstraintLayout register_part2 = findViewById(R.id.register_part2);
                     register_part1.setVisibility(View.GONE);

@@ -121,7 +121,7 @@ ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 alter table lu
 add constraint lu_fk_cliente
-foreign key (lu_cliente_id) references cliente(cli_id)
+foreign key (lu_cli_id) references cliente(cli_id)
 ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 alter table lu

@@ -1,5 +1,5 @@
 create table cliente(
-                cli _id int not null auto_increment,
+                cli_id int not null auto_increment,
                 cli_name VARCHAR(60) not null,             #cliente name
                 cli_place VARCHAR(30),                     #cliente location
                 cli_bdate date not null,                   #cliente date of birth

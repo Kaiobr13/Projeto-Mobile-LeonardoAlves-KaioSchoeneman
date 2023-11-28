@@ -108,9 +108,9 @@ public class WelcomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!CheckEntrysP1(v)){
-                    Toast.makeText(getApplicationContext(), "Preencha as informações que faltam!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Fill in the missing information!", Toast.LENGTH_LONG).show();
             } else if(!VerifyPass(v)) {
-                    Toast.makeText(getApplicationContext(), "Suas senhas não são iguais!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Your passwords are not the same!", Toast.LENGTH_LONG).show();
                 } else {
                     ConstraintLayout register_part1 = findViewById(R.id.register_part1);
                     ConstraintLayout register_part2 = findViewById(R.id.register_part2);
@@ -135,7 +135,7 @@ public class WelcomeActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(!CheckEntrysP2(v)){
-                    Toast.makeText(getApplicationContext(), "Preencha as informações que faltam!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Fill in the missing information!", Toast.LENGTH_LONG).show();
                 } else {
                 startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
                 }

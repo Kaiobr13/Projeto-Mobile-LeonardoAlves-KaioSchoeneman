@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!CheckEntrys(v)){
-                    Toast.makeText(getApplicationContext(),"Preencha as informações que faltam!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Fill in the missing information!", Toast.LENGTH_LONG).show();
                 } else {
                     startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 }

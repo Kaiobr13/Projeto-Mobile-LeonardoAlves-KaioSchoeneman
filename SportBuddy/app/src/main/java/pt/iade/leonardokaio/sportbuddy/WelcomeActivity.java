@@ -13,12 +13,6 @@ import android.widget.Toast;
 
 public class WelcomeActivity extends AppCompatActivity {
 
-    private Button btnlogin;
-    private Button btnregister;
-    private ImageButton btnresback1;
-    private ImageButton btnresnext1;
-    private ImageButton btnresback2;
-    private Button btncreateaccount;
     private EditText registerusername;
     private EditText registeremail;
     private EditText registereditPass;
@@ -64,17 +58,17 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome_page);
-
+        Button btnlogin;
         setupComponents();
     }
 
     private void setupComponents() {
-        btnlogin = findViewById(R.id.welcome_login_button);
-        btnregister = findViewById(R.id.welcome_register_button);
-        btnresback1 = findViewById(R.id.register_backbut1);
-        btnresnext1 = findViewById(R.id.register_nextbut1);
-        btnresback2 = findViewById(R.id.register_backbut2);
-        btncreateaccount = findViewById(R.id.register_button_create2);
+        Button btnlogin = findViewById(R.id.welcome_login_button);
+        Button btnregister = findViewById(R.id.welcome_register_button);
+        ImageButton btnresback1 = findViewById(R.id.register_backbut1);
+        ImageButton btnresnext1 = findViewById(R.id.register_nextbut1);
+        ImageButton btnresback2 = findViewById(R.id.register_backbut2);
+        Button btncreateaccount = findViewById(R.id.register_button_create2);
 
 
         btnregister.setOnClickListener (new View.OnClickListener() {

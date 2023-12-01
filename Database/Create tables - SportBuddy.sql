@@ -1,10 +1,11 @@
 create table cliente(
-                cli _id int not null auto_increment,
+                cli_id int not null auto_increment,
                 cli_name VARCHAR(60) not null,             #cliente name
                 cli_place VARCHAR(30),                     #cliente location
                 cli_bdate date not null,                   #cliente date of birth
                 cli_gender CHAR(1) not null,               #cliente gender
-                cli_email VARCHAR(30),                     #cliente email 
+                cli_email VARCHAR(30),                     #cliente email
+                -- cli_cs_id int not null,
                 primary key (cli_id)
 );
 
@@ -45,7 +46,7 @@ create table horarios(
 
 create table reserva(
                     res_id int not null auto_increment,
-                    res_estado VARCHAR(20),
+                    res_estado VARCHAR(20), -- aqui supostamente é o "er_name"
                     res_pdate datetime not null,
                     res_er_id int not null,
                     res_lob_id int not null,
@@ -121,7 +122,7 @@ ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 alter table lu
 add constraint lu_fk_cliente
-foreign key (lu_cliente_id) references cliente(cli_id)
+foreign key (lu_cli_id) references cliente(cli_id)
 ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 alter table lu

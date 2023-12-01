@@ -11,14 +11,6 @@ import android.widget.ImageButton;
 
 public class SettingsActivity extends AppCompatActivity {
 
-    private ImageButton btnbackprof;
-    private Button btngotoacc;
-    private ImageButton btncloseacc;
-    private Button btngotonotif;
-    private ImageButton btnclosenotif;
-    private Button btndelete;
-    private ImageButton btnclosedelete;
-    private Button btndeleteacc;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,14 +21,14 @@ public class SettingsActivity extends AppCompatActivity {
 
     private void setupComponents() {
 
-        btnbackprof = findViewById(R.id.settings_backbut);
-        btngotoacc = findViewById(R.id.settings_accbut);
-        btncloseacc = findViewById(R.id.account_close);
-        btngotonotif = findViewById(R.id.settings_notifbut);
-        btnclosenotif = findViewById(R.id.notifications_close);
-        btndelete = findViewById(R.id.settings_deleteacc);
-        btnclosedelete = findViewById(R.id.delete_close);
-        btndeleteacc = findViewById(R.id.delete_but);
+        ImageButton btnbackprof = findViewById(R.id.settings_backbut);
+        Button btngotoacc = findViewById(R.id.settings_accbut);
+        ImageButton btncloseacc = findViewById(R.id.account_close);
+        Button btngotonotif = findViewById(R.id.settings_notifbut);
+        ImageButton btnclosenotif = findViewById(R.id.notifications_close);
+        Button btndelete = findViewById(R.id.settings_deleteacc);
+        ImageButton btnclosedelete = findViewById(R.id.delete_close);
+        Button btndeleteacc = findViewById(R.id.delete_but);
 
         btnbackprof.setOnClickListener(new View.OnClickListener() {
             @Override

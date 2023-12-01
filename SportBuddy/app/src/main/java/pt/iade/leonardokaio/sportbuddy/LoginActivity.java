@@ -11,14 +11,9 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private ImageButton btnbacklog;
-    private ImageButton btnnextlog;
-    private EditText textUsername;
-    private EditText textPassword;
-
     public boolean CheckEntrys(View view){
-        textUsername = (EditText)findViewById(R.id.login_username_text);
-        textPassword = (EditText)findViewById(R.id.login_password_text);
+        EditText textUsername = (EditText)findViewById(R.id.login_username_text);
+        EditText textPassword = (EditText)findViewById(R.id.login_password_text);
         if(textPassword.getText().toString().equals("")||textUsername.getText().toString().equals(""))
         {
             return false;
@@ -35,8 +30,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void setupComponents() {
-        btnbacklog = findViewById(R.id.login_backbut);
-        btnnextlog = findViewById(R.id.login_nextbut);
+        ImageButton btnbacklog = findViewById(R.id.login_backbut);
+        ImageButton btnnextlog = findViewById(R.id.login_nextbut);
 
         btnbacklog.setOnClickListener(new View.OnClickListener() {
             @Override

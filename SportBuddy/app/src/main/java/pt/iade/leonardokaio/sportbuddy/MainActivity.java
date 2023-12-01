@@ -9,10 +9,6 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageButton btngotoprof;
-    private ImageButton btngotomap;
-
-    private ImageButton btngotoMM;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupComponents() {
 
-        btngotoprof = findViewById(R.id.home_profilebut);
-        btngotomap = findViewById(R.id.home_mapbut);
-        btngotoMM = findViewById(R.id.home_matchbut);
+        ImageButton btngotoprof = findViewById(R.id.home_profilebut);
+        ImageButton btngotomap = findViewById(R.id.home_mapbut);
+        ImageButton btngotoMM = findViewById(R.id.home_matchbut);
 
         btngotoprof.setOnClickListener(new View.OnClickListener() {
                 @Override

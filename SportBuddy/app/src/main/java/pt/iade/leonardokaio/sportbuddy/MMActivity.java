@@ -3,13 +3,12 @@ package pt.iade.leonardokaio.sportbuddy;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
 public class MMActivity extends AppCompatActivity {
-
-    private ImageButton btnbacktomain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +20,7 @@ public class MMActivity extends AppCompatActivity {
 
     private void setupComponents() {
 
-        btnbacktomain = findViewById(R.id.MM_backtomain);
+       ImageButton btnbacktomain = findViewById(R.id.MM_backtomain);
 
         btnbacktomain.setOnClickListener(new View.OnClickListener() {
             @Override

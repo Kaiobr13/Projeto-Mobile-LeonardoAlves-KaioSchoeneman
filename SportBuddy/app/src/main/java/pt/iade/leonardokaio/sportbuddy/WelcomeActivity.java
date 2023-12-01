@@ -13,41 +13,33 @@ import android.widget.Toast;
 
 public class WelcomeActivity extends AppCompatActivity {
 
-    private EditText registerusername;
-    private EditText registeremail;
-    private EditText registereditPass;
-    private EditText registerverifyPass;
-    private EditText registerbirthday;
-    private EditText registerphone;
-    private EditText registernation;
-
     public boolean CheckEntrysP1(View view) {
-        registerusername = (EditText)findViewById(R.id.register_edit_user);
-        registeremail = (EditText)findViewById(R.id.register_edit_email);
-        registereditPass = (EditText)findViewById(R.id.register_edit_pass);
-        registerverifyPass = (EditText)findViewById(R.id.register_verify_pass);
-        registerbirthday = (EditText)findViewById(R.id.register_birthday);
+        EditText registerusername = (EditText) findViewById(R.id.register_edit_user);
+        EditText registeremail = (EditText) findViewById(R.id.register_edit_email);
+        EditText registereditPass = (EditText)findViewById(R.id.register_edit_pass);
+        EditText registerverifyPass = (EditText)findViewById(R.id.register_verify_pass);
+        EditText registerbirthday = (EditText) findViewById(R.id.register_birthday);
 
-        if (registerusername.getText().toString().equals("")||registeremail.getText().toString().equals("")||registereditPass.getText().toString().equals("")
-                ||registerverifyPass.getText().toString().equals("")||registerbirthday.getText().toString().equals("")) {
+        if (registerusername.getText().toString().equals("")|| registeremail.getText().toString().equals("")||registereditPass.getText().toString().equals("")
+                ||registerverifyPass.getText().toString().equals("")|| registerbirthday.getText().toString().equals("")) {
             return false;
         }
         return true;
     }
 
     public boolean CheckEntrysP2(View view){
-        registerphone = (EditText)findViewById(R.id.register_insert_phone);
-        registernation = (EditText)findViewById(R.id.register_nationality);
+        EditText registerphone = (EditText) findViewById(R.id.register_insert_phone);
+        EditText registernation = (EditText) findViewById(R.id.register_nationality);
 
-        if (registerphone.getText().toString().equals("")||registernation.getText().toString().equals("")){
+        if (registerphone.getText().toString().equals("")|| registernation.getText().toString().equals("")){
             return false;
         }
         return true;
     }
 
     public boolean VerifyPass(View view) {
-        registereditPass = (EditText) findViewById(R.id.register_edit_pass);
-        registerverifyPass = (EditText) findViewById(R.id.register_verify_pass);
+        EditText registereditPass = (EditText) findViewById(R.id.register_edit_pass);
+        EditText registerverifyPass = (EditText) findViewById(R.id.register_verify_pass);
         if (!registerverifyPass.getText().toString().equals(registereditPass.getText().toString()))
         {
             return false;
@@ -58,7 +50,7 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome_page);
-        Button btnlogin;
+
         setupComponents();
     }
 

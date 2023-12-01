@@ -10,11 +10,6 @@ import android.widget.ImageButton;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    private ImageButton btngotomain;
-    private ImageButton btnstats;
-    private ImageButton btnclosestats;
-    private ImageButton btngotoset;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,10 +20,10 @@ public class ProfileActivity extends AppCompatActivity {
 
     private void setupComponents() {
 
-        btngotomain = findViewById(R.id.profile_homebut);
-        btnstats = findViewById(R.id.profile_statsbut);
-        btnclosestats = findViewById(R.id.stats_closepage);
-        btngotoset = findViewById(R.id.profile_setbut);
+       ImageButton btngotomain = findViewById(R.id.profile_homebut);
+       ImageButton btnstats = findViewById(R.id.profile_statsbut);
+       ImageButton btnclosestats = findViewById(R.id.stats_closepage);
+       ImageButton btngotoset = findViewById(R.id.profile_setbut);
 
         btngotomain.setOnClickListener(new View.OnClickListener() {
             @Override

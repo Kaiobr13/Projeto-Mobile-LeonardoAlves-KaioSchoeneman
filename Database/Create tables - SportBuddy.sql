@@ -40,7 +40,7 @@ create table MCH(
 
 create table horarios(
                     hor_id int not null auto_increment,
-                    hor_slot datetime,                      -- slot marcando o dia/hora da marcação
+                    hor_slot VARCHAR(30),                      -- slot marcando o dia/hora da marcação
                     primary key (hor_id)
 );
 

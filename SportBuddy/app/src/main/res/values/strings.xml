@@ -44,6 +44,9 @@
 
     <!-- MM Activity-->
     <string name="seekbar_text">How far you want to go?</string>
+    <string name="range_text">Your range is 0KM</string>
+    <string name="select_hint">Select Modality</string>
+    <string name="auto_complete_txt"></string>
 
     <!-- General -->
     <string name="next_page">Next</string>

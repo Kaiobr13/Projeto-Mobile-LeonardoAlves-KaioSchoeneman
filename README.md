@@ -31,7 +31,7 @@ Para tal, e como nos foi proposto iremos criar esta aplicação com a utilizaç�
 **Requisitos não Funcionais:**
 - Possuir o Java instalado
 - O dispositivo móvel ser android (pensamos em expandir ao IOS futuramente)
-- Ter acesso ao servidor da base de dados
+- Ter acesso ao servidor da base de dados e ao web server
 
 ## Implementação das UCs
 

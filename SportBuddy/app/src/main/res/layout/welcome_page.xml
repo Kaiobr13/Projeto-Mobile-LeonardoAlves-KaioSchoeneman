@@ -12,7 +12,7 @@
         android:id="@+id/welcome_page"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -104,8 +104,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/register_part1"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="383dp"
+        android:layout_height="594dp"
+        android:background="@drawable/border_frame"
         android:backgroundTint="#FF9800"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -115,19 +116,19 @@
 
         <TextView
             android:id="@+id/register_text_part1.2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="180dp"
-            android:layout_marginEnd="200dp"
+            android:layout_width="82dp"
+            android:layout_height="27dp"
             android:text="@string/etapa1"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/register_table1.2"
             app:layout_constraintEnd_toEndOf="@+id/register_table1.2"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="@+id/register_table1.2"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.88" />
+            app:layout_constraintVertical_bias="0.555"
+            tools:text="@string/etapa1" />
 
         <TableLayout
             android:id="@+id/register_table1.2"
@@ -228,60 +229,60 @@
             android:id="@+id/register_backbut1"
             android:layout_width="70dp"
             android:layout_height="48dp"
-            android:layout_marginStart="4dp"
-            android:backgroundTint="#FF9800"
+            android:layout_marginStart="36dp"
+            android:backgroundTint="#00FF9800"
             android:contentDescription="@string/previous_page"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/register_table1.2"
             app:layout_constraintTop_toBottomOf="@+id/register_table1.2"
-            app:layout_constraintVertical_bias="0.201"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/arrow_back_ios_new"
-            app:tint="@color/white"
+            app:tint="#FF9800"
             tools:ignore="ImageContrastCheck" />
 
         <ImageButton
             android:id="@+id/register_nextbut1"
             android:layout_width="70dp"
             android:layout_height="48dp"
-            android:backgroundTint="#FF9800"
+            android:backgroundTint="#00FF9800"
             android:contentDescription="@string/next_page"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/register_table1.2"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.888"
             app:layout_constraintStart_toEndOf="@+id/register_backbut1"
             app:layout_constraintTop_toBottomOf="@+id/register_table1.2"
-            app:layout_constraintVertical_bias="0.201"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/arrow_forward_ios"
-            app:tint="@color/white"
+            app:tint="#FF9800"
             tools:ignore="ImageContrastCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/register_part2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone"
+        android:layout_width="385dp"
+        android:layout_height="506dp"
+        android:background="@drawable/border_frame"
+        android:clipToPadding="false"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501">
 
         <TextView
             android:id="@+id/register_text_part2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="180dp"
-            android:layout_marginEnd="200dp"
+            android:layout_width="87dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="55dp"
             android:text="@string/etapa2"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/register_table2"
-            app:layout_constraintEnd_toEndOf="@+id/register_table2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/register_table2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.889" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TableLayout
             android:id="@+id/register_table2"
@@ -348,9 +349,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"
-            android:backgroundTint="#FF9800"
+            android:backgroundTint="#00FF9800"
             android:drawableEnd="@drawable/person_add"
-            android:drawableTint="@color/white"
+            android:drawableTint="#FF9800"
             android:text="@string/create_account"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/register_table2"
@@ -363,7 +364,7 @@
             android:id="@+id/register_backbut2"
             android:layout_width="70dp"
             android:layout_height="48dp"
-            android:backgroundTint="#FF9800"
+            android:backgroundTint="#00FF9800"
             android:contentDescription="@string/previous_page"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/register_button_create2"
@@ -372,7 +373,7 @@
             app:layout_constraintTop_toBottomOf="@+id/register_table2"
             app:layout_constraintVertical_bias="0.292"
             app:srcCompat="@drawable/arrow_back_ios_new"
-            app:tint="@color/white"
+            app:tint="#FF9800"
             tools:ignore="ImageContrastCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

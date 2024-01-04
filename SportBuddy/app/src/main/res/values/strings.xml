@@ -33,9 +33,14 @@
     <string name="create_account">Create account</string>
     <string name="policies">I agree with</string>
     <string name="switch_privacy_policies">I agree with Privacy Policies</string>
+<<<<<<< Updated upstream
     <string name="etapa1">Part 1.2</string>
     <string name="etapa2">Part 2.2</string>
     <string name="nation_hint">Insert your nationality</string>
+=======
+    <string name="etapa1">Part 1/2</string>
+    <string name="etapa2">Part 2/2</string>
+>>>>>>> Stashed changes
 
     <!-- Main Activity -->
     <string name="map_button">Map</string>

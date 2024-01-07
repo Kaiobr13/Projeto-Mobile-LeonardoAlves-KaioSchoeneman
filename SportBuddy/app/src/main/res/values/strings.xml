@@ -33,25 +33,28 @@
     <string name="create_account">Create account</string>
     <string name="policies">I agree with</string>
     <string name="switch_privacy_policies">I agree with Privacy Policies</string>
-<<<<<<< Updated upstream
-    <string name="etapa1">Part 1.2</string>
-    <string name="etapa2">Part 2.2</string>
     <string name="nation_hint">Insert your nationality</string>
-=======
     <string name="etapa1">Part 1/2</string>
     <string name="etapa2">Part 2/2</string>
->>>>>>> Stashed changes
 
     <!-- Main Activity -->
     <string name="map_button">Map</string>
     <string name="start_game_button">Matchmaking</string>
     <string name="profile_button">Profile</string>
 
-    <!-- MM Activity-->
+    <!-- MM Activity -->
     <string name="seekbar_text">How far you want to go?</string>
     <string name="range_text">Your range is 0KM</string>
     <string name="select_hint">Select Modality</string>
     <string name="auto_complete_txt"></string>
+
+    <!-- Lobby Activity -->
+    <string name="edit_notes">Edit a note</string>
+    <string name="title_hint">Lobby title here</string>
+    <string name="notes_label">Participants here</string>
+    <string name="note_hint">Lobby description here</string>
+    <string name="modify_date">Last modified date</string>
+    <string name="save_note_menu">Save note</string>
 
     <!-- General -->
     <string name="next_page">Next</string>

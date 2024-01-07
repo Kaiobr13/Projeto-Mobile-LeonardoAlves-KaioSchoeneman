@@ -8,11 +8,13 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="VisualLintBottomNav">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -27,7 +29,9 @@
                 android:layout_weight="1"
                 android:backgroundTint="#FF9800"
                 android:contentDescription="@string/map_button"
-                app:srcCompat="@drawable/map" />
+                app:srcCompat="@drawable/map"
+                app:tint="@color/white"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageButton
                 android:id="@+id/home_matchbut"
@@ -36,7 +40,9 @@
                 android:layout_weight="1"
                 android:backgroundTint="#FF9800"
                 android:contentDescription="@string/start_game_button"
-                android:src="@drawable/sports" />
+                android:src="@drawable/sports"
+                app:tint="@color/white"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageButton
                 android:id="@+id/home_profilebut"
@@ -45,8 +51,11 @@
                 android:layout_weight="1"
                 android:backgroundTint="#FF9800"
                 android:contentDescription="@string/profile_button"
-                android:src="@drawable/person" />
+                android:src="@drawable/person"
+                app:tint="@color/white"
+                tools:ignore="ImageContrastCheck" />
 
         </LinearLayout>
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

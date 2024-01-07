@@ -13,6 +13,9 @@
         android:theme="@style/Theme.SportBuddy"
         tools:targetApi="33">
         <activity
+            android:name=".LobbyActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity2"
             android:exported="false" />
         <!--

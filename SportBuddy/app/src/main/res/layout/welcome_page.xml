@@ -12,7 +12,7 @@
         android:id="@+id/welcome_page"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -23,8 +23,7 @@
         <ImageView
             android:id="@+id/welcome_applogo"
             android:layout_width="250dp"
-            android:layout_height="140dp"
-            android:background="#FF9800"
+            android:layout_height="240dp"
             android:contentDescription="@string/logo"
             app:layout_constraintBottom_toBottomOf="@+id/welcome_termsofservice_label"
             app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +31,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.307"
-            app:srcCompat="@drawable/ic_launcher_foreground"
+            app:srcCompat="@drawable/logo"
             tools:ignore="ImageContrastCheck" />
 
         <TextView
@@ -264,7 +263,7 @@
         android:layout_height="506dp"
         android:background="@drawable/border_frame"
         android:clipToPadding="false"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

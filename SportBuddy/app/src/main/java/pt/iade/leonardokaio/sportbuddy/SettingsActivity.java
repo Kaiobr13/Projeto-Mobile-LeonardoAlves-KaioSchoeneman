@@ -96,7 +96,5 @@ public class SettingsActivity extends AppCompatActivity {
                 settings_main.setVisibility(View.VISIBLE);
             }
         });
-
-        //TODO:delete button
     }
 }

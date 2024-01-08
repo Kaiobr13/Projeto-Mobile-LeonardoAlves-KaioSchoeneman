@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/auto_complete_txt"
             android:inputType="none"
-            tools:ignore="SpeakableTextPresentCheck">
+            tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize">
         </AutoCompleteTextView>
 
     </com.google.android.material.textfield.TextInputLayout>

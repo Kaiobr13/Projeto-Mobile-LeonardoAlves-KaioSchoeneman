@@ -60,14 +60,14 @@ public class MMActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mmactivity);
 
         autoCompleteTextView = findViewById(R.id.auto_complete_txt);
-        adapterItems = new ArrayAdapter<>(this, R.layout.list_item, modality);
+        adapterItems = new ArrayAdapter<String>(this, R.layout.list_item, modality);
 
         autoCompleteTextView.setAdapter(adapterItems);
 
         autoCompleteTextView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
-                String item = adapterItems.getItem(i);
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String item = adapterItems.getItem(i).toString();
                 Toast.makeText (MMActivity.this, "You have choosed " + item + " modality!", Toast.LENGTH_SHORT).show();
             }
         });

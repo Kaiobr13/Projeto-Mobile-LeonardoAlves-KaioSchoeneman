@@ -19,13 +19,13 @@ create table campos (
                     camp_name VARCHAR(60) not null,         #campo name
                     camp_place VARCHAR(120),                #campo address 
                     camp_num VARCHAR(14),                   #campo numero de tlm
-                    camp_mod_id int,
+                    camp_mod_id int not null,
                     primary key (camp_id)
 );
 
 create table MC(
                 mc_id int not null auto_increment,
-                mc_mod_id int not null,
+                mc_mod_id int not null, 
                 mc_camp_id int not null,
                 primary key (mc_id)
 );
@@ -45,7 +45,7 @@ create table horarios(
 
 create table reserva(
                     res_id int not null auto_increment,
-                    res_pdate date not null,
+                    res_pdate VARCHAR(60) not null,
                     res_er_id int not null,
                     res_lob_id int not null,
                     res_mch_id int not null,

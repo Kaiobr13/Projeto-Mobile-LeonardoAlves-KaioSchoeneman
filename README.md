@@ -1,5 +1,7 @@
  # Relatório do Projeto
 
+Projeto finalizado até o momento em que um dos participantes se interesse em voltar a atualizar e melhorar a aplicação.
+
 ## Indíce
 - [Introdução](#introdução)
 - [Objetivos](#objetivos)
